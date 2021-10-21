@@ -1,11 +1,14 @@
 import Navbar from './Navbar'
-
+import {Video} from './Video/Video.js'
+import temp from './assets/Seoul.mp4';
 function App() {
   return (
     <main id='home'>
       <Navbar />
       <section className='home'>
-        <h1>home</h1>
+        <Video width="100%" height="100%" autoPlay="autoPlay" muted loop>
+            <source src={temp} type='video/mp4' />
+        </Video>
       </section>
       <section className='about' id='about'>
         <h1>about</h1>
